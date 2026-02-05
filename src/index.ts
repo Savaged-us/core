@@ -96,3 +96,15 @@ export {
 // Enums
 // ============================================================================
 export { ValidityLevel } from './enums/ValidityLevel';
+
+// ============================================================================
+// Mock data for testing (no licensed content)
+// ============================================================================
+export { 
+  createMockChargenData, 
+  MOCK_SKILLS, 
+  MOCK_EDGES, 
+  MOCK_HINDRANCES,
+  MOCK_WEAPONS,
+  MOCK_ARMOR,
+} from './mock/chargenData';

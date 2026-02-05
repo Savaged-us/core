@@ -108,28 +108,49 @@ npm test -- --coverage   # With coverage report
 
 ## What to Contribute
 
+### High-Impact Contributions
+
+**VTT Export Formats** — Most valuable! Help players use their characters:
+- Roll20 character sheet JSON
+- Foundry VTT actor data  
+- Fantasy Grounds XML
+- Owlbear Rodeo / other VTTs
+
+See `src/utils/convertExportToVTT*.ts` for existing formats.
+
+**Character Sheet Exports:**
+- PDF generation improvements
+- Markdown/BBCode for forums
+- Plain text stat blocks
+
 ### Good First Issues
 
-- Add unit tests for existing modules
-- Improve TypeScript types (gradual strict mode adoption)
+- Add unit tests for calculation modules
+- Improve TypeScript types (we use `any` too much)
 - Documentation improvements
-- Bug fixes
+- Fix edge cases in import/export
 
-### Feature Ideas
+### Testing Without the Full App
 
-- Additional VTT export formats (Foundry, Roll20, etc.)
-- Dice roller improvements
-- Character sheet layout options
-- Setting-specific rule modules
+We provide mock chargen data so you can test without the real (licensed) content:
+
+```typescript
+import { createMockChargenData, MOCK_EDGES, MOCK_SKILLS } from '@savaged/core';
+
+const mockData = createMockChargenData();
+console.log(mockData.skills); // Sample skills for testing
+```
+
+Run `npx ts-node examples/with-mock-data.ts` to see what's available.
 
 ### Not in Scope (for core)
 
 These belong in the main Savaged.us app, not the core engine:
 
-- UI components
-- Database/persistence
+- UI components (React, etc.)
+- Database/persistence layer
 - User authentication
-- Licensed content (book data)
+- Licensed content (edges, powers, etc. from published books)
 
 ## Questions?
 
