@@ -1,5 +1,5 @@
 import { isNative } from 'lodash';
-import { ISVGOptions, normalizeSvgOptions } from '../../../character-sheet/SVGOptions';
+import { ISVGOptions, normalizeSvgOptions } from '../../character-sheet/SVGOptions';
 import { IChargenData } from '../../interfaces/IChargenData';
 import { IJSONSettingExport } from '../../interfaces/IJSONSettingExport';
 import { ISkillListImport } from '../../interfaces/ISkillListImport';

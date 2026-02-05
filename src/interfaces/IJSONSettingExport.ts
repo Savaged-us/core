@@ -11,7 +11,7 @@ import { IVehicleEntry } from "../classes/vehicle_entry";
 import { IChargenCyberware } from "../classes/player_character/cyberware";
 import { IChargenFramework } from "../classes/player_character/player_character_framework";
 import { IChargenArcaneBackground } from "../classes/player_character/arcane_background";
-import { ISVGOptions } from "../../character-sheet/SVGOptions";
+import { ISVGOptions } from "../character-sheet/SVGOptions";
 import { IBaseObjectExport } from "../classes/_base_object";
 import { IChargenRobotMod } from "../classes/player_character/robot_mod";
 import { IChargenRiftsTattoo } from "../classes/player_character/riftsTattoos";

@@ -1,5 +1,5 @@
 import SanitizeHTML from 'sanitize-html';
-import { CONFIGLiveHost, CONFIGSiteTitle } from '../../../ConfigGeneral';
+import { CONFIGLiveHost, CONFIGSiteTitle } from '../../ConfigGeneral';
 import { ValidityLevel } from '../../enums/ValidityLevel';
 import { IBaseAttributes } from '../../interfaces/IBaseAttributes';
 import { IChargenData } from '../../interfaces/IChargenData';

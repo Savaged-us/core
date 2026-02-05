@@ -7,7 +7,7 @@
  */
 
 import type { PlayerCharacter } from '../player_character';
-import { CONFIGLiveHost } from '../../../../ConfigGeneral';
+import { CONFIGLiveHost } from '../../../ConfigGeneral';
 import { IExportArcaneBackground, IExportStatsOutput, sortPowerExports } from '../../../interfaces/IExportStatsOutput';
 import { capitalCase, getRankName, normalizeCharacters, replaceAll } from '../../../utils/CommonFunctions';
 import { getDisplayText } from '../../../utils/escapeCharacterFixer';

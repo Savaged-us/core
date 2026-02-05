@@ -1,4 +1,3 @@
-import { string } from "prop-types";
 import { replaceAll } from "./CommonFunctions";
 import { isNumber, floor } from "lodash";
 

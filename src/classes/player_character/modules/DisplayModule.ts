@@ -19,7 +19,7 @@ import { getDisplayText } from '../../../utils/parseEscapedString';
 import { emboldenBeforeColon } from '../../../utils/emboldenBeforeColon';
 import { replaceAll } from '../../../utils/CommonFunctions';
 import { ValidityLevel } from '../../../enums/ValidityLevel';
-import { CONFIGLiveHost, CONFIGSiteTitle } from '../../../../ConfigGeneral';
+import { CONFIGLiveHost, CONFIGSiteTitle } from '../../../ConfigGeneral';
 import SanitizeHTML from 'sanitize-html';
 import { BaseModule } from './BaseModule';
 
