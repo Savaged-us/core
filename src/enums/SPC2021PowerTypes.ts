@@ -1,0 +1,21 @@
+
+export const CONST_SPC2021PowerTypes = [
+    ["Air", "matter", "Air"],
+    ["Biological", "matter", "Biological (animals, humans, punches, kicks)"],
+    ["Cold", "energy", "Cold (frost, ice)"],
+    ["Darkness", "energy", "Darkness"],
+    ["Earth", "matter", "Earth (glass, sand, stone)"],
+    ["Electricity", "energy", "Electricity (lightning)"],
+    ["Fire", "energy", "Fire (heat)"],
+    ["Force", "energy", "Force (force fields, force projections, gravity, magnetism)"],
+    ["Light", "energy", "Light (lasers)"],
+    ["Magic", "energy", "Magic (spiritual, supernatural)"],
+    ["Mental", "energy", "Mental (hypnosis, psionics)"],
+    ["Metal", "matter", "Metal (bullets, knives)"],
+    ["Plant", "matter", "Plant (most cloth, rope)"],
+    ["Radiation", "energy", "Radiation"],
+    ["Sound", "energy", "Sound"],
+    ["Synthetic", "matter", "Synthetic (plastic)"],
+    ["Temporal", "energy", "Temporal (time powers)"],
+    ["Water", "matter", "Water (liquids)"],
+];
