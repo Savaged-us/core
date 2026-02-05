@@ -15,24 +15,34 @@ The core character building engine for Savage Worlds RPG, extracted from [Savage
 npm install @savaged/core
 ```
 
-## Usage
+## Quick Start
 
 ```typescript
 import { PlayerCharacter } from '@savaged/core';
-import type { IChargenData, IJSONPlayerCharacterExport } from '@savaged/core';
 
-// Create a new character
-const character = new PlayerCharacter(chargenData);
+// Create a character (pass null for empty chargen data)
+const character = new PlayerCharacter(null);
 
-// Set attributes
-character.setAttributeValue('agility', 2);  // d8
-
-// Add edges and hindrances
-character.edgeInstall(edgeId, options);
-character.hindranceInstall(hindranceId, specify, isMajor);
+// Set basic info
+character.name = 'Rex Steele';
+character.background = 'Hard-boiled detective, seen too much.';
+character.gender = 'Male';
+character.age = '45';
 
 // Export to JSON
-const exportData: IJSONPlayerCharacterExport = character.exportObj();
+const exported = character.exportObj();
+
+// Import into a new character
+const restored = new PlayerCharacter(null);
+restored.importObj(exported, null);
+```
+
+## Try the Examples
+
+```bash
+git clone https://github.com/Savaged-us/core.git
+cd core && npm install
+npx ts-node examples/basic-character.ts
 ```
 
 ## Architecture
